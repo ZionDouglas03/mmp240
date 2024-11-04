@@ -32,7 +32,12 @@ header p{
 
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2em;
+    background-color: #ffffff;
 }
 
 /* ********Typograhy ********* */
@@ -57,9 +62,9 @@ p, h2{
 
 
 header p{
-    color:white
+    color:white;
     width:25%;
-    margin-left: 20px;
+    margin-left: 20px
 }
 
 
@@ -79,7 +84,7 @@ header p{
 
 header .btn{
     margin-left: 20px;
-    background-color: #cccccc00;
+    background-color: #ce7500;
     background-repeat:no-repeat;
     background-position: left;
     border:#fff;
@@ -93,7 +98,7 @@ header .btn{
 
 nav{
     background-color: rgb(255, 178, 77);
-    padding: 3px;
+    padding: 3px
     
 }
 
@@ -158,6 +163,7 @@ h3{
 main{
     margin-bottom: 3em;
     overflow: auto;
+    padding: 1em;
 }
 
 
@@ -176,7 +182,7 @@ main{
 }
 
 .responsive-img{
-    width:100;
+    width:100%;
 }
 
 .episode-card img{
@@ -187,8 +193,8 @@ main{
 
 
 div{
-    padding: 1em;
     background-color: rgba (0,0,0,0.5);
+    padding: .9em;
 }
 
 a{
@@ -208,4 +214,12 @@ a:hover{
 a:active{
     color: rgb(255, 255, 255);
     text-decoration: none;
+}
+
+
+/* the styles here will apply to screen sizes smaller than 846px*/
+@media (max-width: 846px){
+    header{
+        padding-top: 15em;
+    }
 }
