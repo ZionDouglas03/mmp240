@@ -1,0 +1,302 @@
+* {
+}
+
+body{
+font-family: "Inter", sans-serif;
+font-style: normal;
+margin-left: 10%;
+margin-right: 10%;
+padding-top: 3vh;
+}
+
+h2, h3, h4, p{
+margin-bottom: 1em;
+}
+
+h2{ 
+    margin-top: 1em;
+    font-size: 22px;
+    color:#b19b2e;
+    font-weight: bold;
+}
+
+.btn{
+display: inline-block;
+border: solid 2px #fff;
+border-radius: 10px;
+color: #ffffff;
+padding: 15px;
+text-decoration: none;
+text-transform: uppercase;
+background-color: rgb(165, 25, 25);
+}
+
+#wrapper{
+max-width: 1200px;
+margin: 0 auto;
+padding:relative;
+}
+/* *** header and top navigation *** */
+
+header{
+display:flex;
+justify-content: space-between;
+align-items: center;
+background-color: none;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.banner .btn {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#topMenu ul li a{
+    text-decoration: none;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    color: #d31919;
+    font-weight: bold;
+}
+
+#topMenu{
+display: none;
+position: absolute;
+right: 0;
+top: 25px;xs
+background-color: white;
+border: solid 1px #d83737;
+padding: 3px;
+}
+
+/* *** Programs Menu *** */
+.h2 {
+text-decoration: bold;
+}
+
+.programNav li{
+background-color: #494949;
+margin-bottom: 1em;
+position: relative;
+}
+
+
+.programNav li a {
+padding: 12px 20px;
+display: block;
+text-decoration: none; /* Remove underline */
+color: #ebe9e9; /* Default text color */
+background-color: #d31919; 
+text-align: center;/* Default background */
+font-size: 16px;
+font-family: 'Arial', sans-serif;
+font-weight: bold;
+transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+border-bottom: 2px solid transparent; /* Border for hover effect */
+}
+
+.programNav li a:hover {
+background-color: #b19b2e; /* Change background on hover */
+color: rgb(237, 233, 233); /* Change text color on hover */
+border-color: #dab237; /* Add border on hover */
+}
+
+.programNav li a:active {
+color: #ff5722; /* Active link color */
+background-color: #e0e0e0; /* Active link background */
+}
+
+
+
+@media (max-width: 768px) {
+.programNav li a {
+font-size: 14px; /* Adjust font size for smaller screens */
+padding: 8px; /* Adjust padding for mobile */
+}
+}
+
+.dropdown{
+display: none;
+}
+.programNav .dropdown li {
+margin-bottom: 0;
+border-bottom: solid 1px rgb(107, 106, 106);
+}
+.programNav .dropdown li a:hover{
+background-color: #b1852e;
+color: rgb(237, 233, 233);
+}
+.programNav li:hover .dropdown{
+display: block;
+}
+
+
+/* ******* Banner *********/
+
+.banner{
+
+    
+    background-image: url("images/queensCollege.jpg");
+    height: 47vh;
+    width:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: end;
+   text-align: center;
+   justify-content: space-around;
+   padding: 2%;
+   font-family:serif;
+   font-size:8px;
+   color:#fff;
+   align-items: top;
+align-content: end;
+border-radius: 6px;
+}
+
+.banner h3{
+background-color: rgba(110, 3, 3, 0.5);
+padding: 1em;
+display: flex;
+font-size: 20px;
+line-height: 1.4em;
+color: rgb(255, 255, 255);
+}
+
+.banner h3 a{
+color: white;
+text-decoration: none;
+}
+
+/* *******Section*******/
+section{
+margin-bottom: 1em;
+}
+
+section h3{
+text-transform: uppercase;
+font-weight: bold;
+color: rgb(0, 0, 0);
+}
+article h2{
+text-transform: 0;
+color: rgb(0, 0, 0);
+}
+.events img{
+width:100%;
+border-radius: 9px;
+}
+/** Category pages **/
+.card{
+border: solid 1px #000;
+border-radius: 10px;
+margin: 10px;
+}
+.card h2, .card h3, .card p{
+text-decoration: none;
+color: #000;
+}
+.cardBody{
+padding: 1em;
+}
+.programCards a{
+text-decoration: none;
+}
+.card h2{
+font-size: 1.4em;
+font-weight: bold;
+}
+.cardBody{
+padding: 1em;
+}
+.programcards a:hover{
+background-color: beige;
+}
+.programCards .card{
+margin: 10px 5px;
+}
+
+footer{ 
+    background-color: rgba(159, 156, 156, 0.5);
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding-left: 3%;
+    margin-top:  10%; ;
+}
+
+
+/*** for screens 768px and up*/
+@media (min-width:768px){
+
+.menu{
+display: none;
+}
+
+#topMenu{
+display: flex;
+border: none;
+position: static;
+}
+#topMenu ul{
+display: flex;
+justify-content: space-around;
+padding: 0;
+margin: 0;
+list-style: none;
+#topMenu a {
+text-decoration: none;
+color: #ebe9e9;
+padding: 12px 20px; /* Increase click area */
+display: block;
+font-size: 16px;
+font-weight: bold;
+background-color: #494949;
+transition: background-color 0.3s, color 0.3s;
+}
+#topMenu a:hover {
+background-color: #2e76b1;
+color: #fff;
+}
+/* Add space around navigation bar itself */
+header {
+padding: 10px 0; /* Vertical spacing inside the header */
+margin-bottom: 1em; /* Space below the navigation bar */
+background-color: #494949; /* Optional: Set a background color */
+}
+}
+
+#topMenu li{
+margin: 0 15px;
+}
+/* horizontal program menu */
+
+.programNav ul{
+display:flex;
+justify-content: space-between;
+}
+.programNav ul li{
+width: 100%;
+position: relative;
+}
+.programNav ul li :hover{
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0;
+}
+.programNav .dropdown{
+display: none;
+position: absolute;
+width: 100%;
+}
+
+main.home{
+display: grid;
+grid-template-columns: 2fr 1fr;
+column-gap: 1em;
+padding-top: 2rem;
+}
+}
+
+/* end of media query */
